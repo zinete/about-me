@@ -66,10 +66,10 @@ h2 {font-size:46px; font-weight:normal;}
 #block-prjEXP .prj .prj-logo {display:block; margin:0 auto; height:180px; width:180px; border-radius:50%;}
 #block-prjEXP .prj .prj-title {height:auto; width:240px; margin:20px 0; font-size:26px; text-align:center;}
 #block-prjEXP .prj .prj-intro {height:auto; width:240px; font-size:20px; text-indent:1em}
-#block-prjEXP #prj-helpmechoose .prj-logo   {background:#ED6461 url(../images/helpmechoose.png) no-repeat center; border:4px solid #FFFFFF;}
+#block-prjEXP #prj-helpmechoose .prj-logo   {background:#ED6461; border:4px solid #FFFFFF;}
 #block-prjEXP #prj-navFixed .prj-title a:hover{border-bottom:3px solid white;}
-#block-prjEXP #prj-navFixed .prj-logo       {background:#9C58B6 url(../images/navFixed.png) no-repeat center; border:4px solid #FFFFFF;}
-#block-prjEXP #prj-integralSystem .prj-logo {background:#16CC70 url(../images/integralSystem.png) no-repeat center; border:4px solid #FFFFFF;}
+#block-prjEXP #prj-navFixed .prj-logo       {background:#9C58B6; border:4px solid #FFFFFF;}
+#block-prjEXP #prj-integralSystem .prj-logo {background:#16CC70; border:4px solid #FFFFFF;}
 
 /* block-wantMore */
 #block-wantMore {width:100%; background-color:#ED6461; color:#fff;}
