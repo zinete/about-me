@@ -52,11 +52,11 @@ h2 {font-size:46px; font-weight:normal;}
 #block-workEXP .time1 {margin-left:110px}
 #block-workEXP .timeline {height:27px; width:868px; margin-left:42px; background:url(../images/timeline.png) no-repeat center;}
 #block-workEXP .workbox  {margin-left:194px;}
-#block-workEXP .workbox li{display:inline-block; width:310px; vertical-align: top;}
+#block-workEXP .workbox li{display:inline-block; width:320px; vertical-align: top;}
 #block-workEXP .workbox li label{display:block;}
 #block-workEXP .workbox .work-place {font-size:26px; font-weight:bold}
-#block-workEXP .workbox .work-position {font-size:20px;}
-#block-workEXP .workbox .work-do {margin-top:10px; font-size:16px;}
+#block-workEXP .workbox .work-position {font-size:20px; margin-top: 5px}
+#block-workEXP .workbox .work-do {margin-top:10px; font-size:14px;line-height: 30px}
 
 /* block-prjEXP */
 #block-prjEXP {padding:50px 0 200px; width:100%; background-color:#129DE7; color:#FFFFFF;}
