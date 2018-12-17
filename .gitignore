@@ -1,0 +1,12 @@
+_Store
+node_modules
+TODO.md
+lib
+docs/.vuepress/dist
+examples/**/build.js
+types/typings
+types/test/*.js
+explorations
+*.log
+.user.ini
+.well-known/
