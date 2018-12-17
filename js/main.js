@@ -18,7 +18,7 @@ $(function(){
 		speed: 400
 	});
 	//技能树动画
-	window.sr = ScrollReveal({ duration: 1000 });
+	window.sr = ScrollReveal({ duration: 800 });
         var nodelist = document.querySelectorAll('.skills ul li')
         sr.reveal(nodelist, 100);
 });
