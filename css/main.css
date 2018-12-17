@@ -73,11 +73,11 @@ h2 {
     line-height: 52px;
     cursor: pointer;
     z-index: 1;
-    color: rgba(255,255,255,0.45);
+    color: #fff;
 }
 
 #block-nav a:hover {
-    color: #fff; 
+    color: #1296db; 
 }
 
 #logo {
