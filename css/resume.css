@@ -19,7 +19,7 @@
     }
 
     a {
-        text-decoration-style: wavy;
+        text-decoration: none;
         color: #000000;
         font-weight: 700;
     }
