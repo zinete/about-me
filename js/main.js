@@ -25,7 +25,6 @@ $(function(){
 });
 
 $(window).resize(function(){
-	console.log("%c I LOVE ZHANGLANG","font-size:20px;color:#fff;")
 	//首页满屏
 	$("#block-firstPage").css("height", $(window).height());
 	//首页文字效果
