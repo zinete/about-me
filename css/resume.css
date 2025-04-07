@@ -1,86 +1,262 @@
+/* 优化字体和颜色变量 */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --light-gray: #f5f6fa;
+  --border-color: #3498db;
+  --heading-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
 
-    /* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-gray);
+  padding: 2rem;
+  font-size: 16px;
+}
 
+#app {
+  position: relative !important;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-    #app {
-        position: relative !important;
-    }
-    img {
-        border: none;
-    }
+/* 更新时间样式优化 */
+#nowtime {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: #636e72;
+}
 
-    ul li {
-        list-style: none;
-    }
+/* 基础元素样式优化 */
+img {
+  border: none;
+}
 
-    a {
-        text-decoration: none;
-        color: #000000;
-        font-weight: 700;
-    }
+ul li {
+  list-style: none;
+}
 
-    body {
-        max-width: 1000px;
-        margin: 0 auto;
-        border-top: 10px solid #394246;
-        border-bottom: 10px solid #394246;
-        background-color: #f7f7f7;
-    }
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 5px solid var(--border-color);
+  border-bottom: 5px solid var(--border-color);
+  background-color: #f7f7f7;
+}
 
-    p {
-        font: normal 14px/28px 'source_sans_prolight';
-        color: #666;
-    }
-    /* main */
+/* 链接样式优化 */
+a {
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-    header{
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 50px;
-        overflow: hidden;
-    }
-   
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
 
-    .list-title h1{
-        color: #394246;
-        font-size: 30px
-    }
+/* 段落样式优化 */
+p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
 
-    .list-title h2 {
-        margin: 30px 0px 20px 0px;
-        font-size:  18px;
-        color: #515f65;
-    }
+/* 头部样式优化 */
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  overflow: hidden;
+}
 
-    .list {
-        margin-top: 20px;
-    }
+.list-title h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
 
-    section{
-        max-width: 1000px;
-        padding: 50px;
-        margin: 0 auto;
-        border-top: 1px solid #394246;
-    }
-    .contet-title h3{
-        font-size:  18px;
-        color: #515f65;
-    }
-    .content{
-        margin-top: 20px;
-    }
+.list-title h2 {
+  margin: 20px 0px 15px 0px;
+  font-size: 20px;
+  color: #515f65;
+}
 
-    .content p{
-        text-indent: 1em;
-    }
-    .content .skill{
-        font-weight: 700;
-    }
-    .project{
-        margin-top: 10px;
-    }
+.list {
+  margin-top: 20px;
+}
+
+.list p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* 内容区域样式优化 */
+section {
+  max-width: 1000px;
+  padding: 30px 50px;
+  margin: 0 auto;
+  border-top: 1px dashed var(--border-color);
+}
+
+.contet-title h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--secondary-color);
+  display: inline-block;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.content p {
+  text-indent: 1em;
+  margin-bottom: 8px;
+}
+
+.content .skill {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.project {
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
+/* 响应式布局优化 */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+    border-width: 3px;
+  }
+
+  #app {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  header,
+  section {
+    padding: 20px;
+  }
+
+  .list-title h1 {
+    font-size: 24px;
+  }
+
+  .list p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .content {
+    margin-top: 15px;
+  }
+
+  .content p {
+    text-indent: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .skill {
+    word-break: break-word;
+  }
+}
+
+/* 小屏幕设备优化 */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  #app {
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  header,
+  section {
+    padding: 15px;
+  }
+
+  .list-title h1 {
+    font-size: 20px;
+  }
+
+  .contet-title h3 {
+    font-size: 18px;
+  }
+
+  #nowtime {
+    position: static;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+
+  .content .skill {
+    font-size: 15px;
+  }
+
+  a {
+    word-break: break-all;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  body {
+    padding: 0;
+    border: none;
+    background: white;
+  }
+
+  #app {
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  section {
+    page-break-inside: avoid;
+    padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .contet-title h3 {
+    border-bottom: 1px solid #000;
+  }
+}

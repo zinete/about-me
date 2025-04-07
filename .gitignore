@@ -10,3 +10,4 @@ explorations
 *.log
 .user.ini
 .well-known/
+.DS_Store
