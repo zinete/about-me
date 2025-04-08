@@ -5,7 +5,7 @@ const projectExperiences = [
     url: 'https://www.law-wit.com',
     urlText: 'https://www.law-wit.com',
     status: '已上线',
-    description: 'Lawwit 是一款面向律师行业的 SaaS 软件。作为核心开发者之一，我负责使用 React + TypeScript 技术栈进行前端开发，实现了案件管理、智能文档协作、客户关系管理等核心功能模块。项目采用微前端架构，使用 Redux 进行状态管理，实现了复杂的表单处理和数据流转。针对律师业务特点，开发了智能文档生成系统，支持多人实时协作编辑。同时优化了系统性能，提升了大量数据下的渲染效率，使用 React Query 优化了数据请求策略。'
+    description: 'Lawwit 是一款面向律师行业的 SaaS 软件。作为核心开发者之一，我负责使用 React + TypeScript 技术栈进行前端开发，实现了案件管理、人事管理，诚信档案等核心功能模块。项目采用微前端架构，使用 Redux 进行状态管理，实现了复杂的表单处理和数据流转。'
   },
   {
     name: '紫砂之家',

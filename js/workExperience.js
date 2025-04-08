@@ -4,7 +4,8 @@ const workExperiences = [
     company: '上海律舟科技有限公司',
     position: '高级前端工程师',
     responsibilities: [
-      '主导法律SaaS产品前端架构设计与开发，使用React + TypeScript + Antd + Tailwind CSS技术栈',
+      '负责法律SaaS产品前端功能设计与开发，使用React + TypeScript + Antd + Tailwind CSS技术栈',
+      '负责人事合同、案件、服务中心, 大模型接入、律所官网定制化开发...',
       '优化前端性能，实现复杂表单交互和大数据渲染，提升用户体验和系统响应速度',
       '参与产品需求分析和技术方案设计，推动前后端协作与技术创新'
     ]
@@ -16,7 +17,7 @@ const workExperiences = [
     responsibilities: [
       '负责区块链浏览器、DApp和官网等产品开发，采用Nuxt.js + Tailwind CSS实现跨平台兼容',
       '深入研究Web3生态，实现DeFi和NFT项目的智能合约交互与前端数据可视化',
-      '构建自动化部署流程，提升团队开发效率和产品迭代速度'
+      '构建前端自动化部署流程，提升团队开发效率和产品迭代速度'
     ]
   },
   {
@@ -54,10 +55,8 @@ function renderWorkExperience() {
     </div>
   `).join('');
 
-
-
   container.innerHTML = experienceHTML;
-  nowtime.innerHTML = `更新时间 ${new Date().toLocaleString()}`
+  nowtime.innerHTML = `更新时间 ${document.lastModified}`
 }
 
 
