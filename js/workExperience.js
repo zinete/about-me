@@ -56,7 +56,6 @@ function renderWorkExperience() {
   `).join('');
 
   container.innerHTML = experienceHTML;
-  nowtime.innerHTML = `更新时间 ${document.lastModified}`
 }
 
 

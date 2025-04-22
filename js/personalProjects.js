@@ -13,6 +13,13 @@ const personalProjects = [
     urlText: 'https://www.zkepai.com',
     status: '已上线',
     description: '这是一款基于Node.js后端和UniApp前端开发的跨平台应用，一套代码同时支持H5网页版和微信小程序。项目针对剑桥少儿英语考级特点，设计了智能单词记忆系统，采用艾宾浩斯遗忘曲线算法优化复习计划。实现了音频识别打分功能，可以帮助孩子纠正发音。后台使用MySql存储学习数据，通过数据分析为家长提供学习报告。该平台目前已服务超过500名学生，有效提升了考级通过率。'
+  },
+  {
+    name: 'Ai编程实现的背单词工具',
+    url: 'https://github.com/zinete/word-sprout',
+    urlText: 'https://github.com/zinete/word-sprout',
+    status: '开发中',
+    description: '基于 Vite + React + Tailwind CSS 构建的现代化背单词应用，采用 shadcn-ui 组件库提供优雅的用户界面。使用 Supabase 作为后端服务，实现用户认证、数据存储和实时同步功能。集成 OpenAI API 提供智能记忆提示和场景对话练习，支持单词本导入导出和学习进度追踪。'
   }
 ];
 
