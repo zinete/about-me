@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--light-gray);
-  padding: 2rem;
+  /* padding: 2rem; */
   font-size: 16px;
 }
 
@@ -229,34 +229,5 @@ section {
 
   a {
     word-break: break-all;
-  }
-}
-
-/* 打印样式优化 */
-@media print {
-  body {
-    padding: 0;
-    border: none;
-    background: white;
-  }
-
-  #app {
-    max-width: 100%;
-    padding: 20px;
-    box-shadow: none;
-  }
-
-  section {
-    page-break-inside: avoid;
-    padding: 20px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .contet-title h3 {
-    border-bottom: 1px solid #000;
   }
 }
