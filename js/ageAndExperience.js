@@ -6,7 +6,7 @@
 const birthDate = new Date(1995, 6, 5); // 月份从0开始，所以8代表9月
 
 // 工作开始日期：2020年2月
-const workStartDate = new Date(2020, 1, 5); // 工作开始于2020年2月
+const workStartDate = new Date(2017, 3, 1); // 工作开始于2020年2月
 
 function calculateAge() {
   const today = new Date();
