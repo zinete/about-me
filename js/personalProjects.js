@@ -23,9 +23,7 @@ function renderPersonalProjects() {
   const projectsHTML = personalProjects.map(project => `
     <div class="content">
       <p class="skill">
-       ${project.name} | 项目地址:
-        <a href="${project.url}" target="_blank">${project.urlText}</a>
-       ${project.status}
+        ${project.name}${project.url ? ` | 项目地址: <a href="${project.url}" target="_blank">${project.urlText}</a>` : ''}${project.status ? ` ${project.status}` : ''}
       </p>
       <p class="project">
         ${project.description}
